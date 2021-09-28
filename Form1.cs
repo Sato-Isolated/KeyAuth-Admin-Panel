@@ -10,7 +10,7 @@ namespace KeyAuth_Admin_Panel
     public partial class Form1 : Form
     {
         private const string KeyAuth = "https://keyauth.com/api/seller/?sellerkey=";
-        private const string SellerKey = "<Seller Key Here>"; //https://keyauth.com/dashboard/app/users/
+        private const string SellerKey = "<Seller Key Here>"; //https://keyauth.com/dashboard/seller/settings/
 
         public Form1()
         {
