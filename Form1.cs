@@ -89,8 +89,7 @@ namespace KeyAuth_Admin_Panel
         private static string TimeLicense(string str)
         {
             if (str == null) return "N/A";
-            var p = int.Parse(str) / 86400;
-            return p + " Day(s)";
+            return int.Parse(str) / 86400 + " Day(s)";
         }
 
         private void RefreshListView1()
