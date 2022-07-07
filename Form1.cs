@@ -88,14 +88,9 @@ namespace KeyAuth_Admin_Panel
 
         private static string TimeLicense(string str)
         {
-            return str switch
-            {
-                "86400" => "1 Day",
-                "2628000" => "30 Days",
-                "2592000" => "30 Days",
-                "7776000" => "90 days",
-                _ => str
-            };
+            if (str == null) return "N/A";
+            var p = int.Parse(str) / 86400;
+            return p + " Day(s)";
         }
 
         private void RefreshListView1()
